@@ -1,0 +1,73 @@
+/* Navigation section */
+#navbar {
+  flex-direction: row;
+  height: 70px;
+}
+#navbar ul li a {
+  font-size: 0.8rem;
+  padding: 0px 5px;
+  margin-bottom: 10px;
+}
+#logo {
+  margin: 5px 5px;
+}
+#logo img {
+  height: 35px;
+  /* margin: 5px 5px; */
+}
+
+/* Home section */
+#home {
+  height: 440px;
+  padding: 3px 35px;
+  text-align: center;
+  align-items: center;
+}
+#home::before {
+  height: 510px;
+}
+#home p {
+  font-size: 14px;
+}
+#home h1 {
+  font-size: 25px;
+}
+
+/* services section*/
+#services {
+  flex-direction: column;
+}
+#services .box {
+  padding: 15px;
+  margin: 2px 0px;
+  margin-bottom: 20px;
+}
+/* Clients section */
+#clients {
+  flex-wrap: wrap;
+}
+#clients img {
+  width: 75px;
+  height: auto;
+  padding: 3px 5px;
+}
+/* Utility classes */
+.h-primary {
+  font-size: 30pxpx;
+}
+.btn {
+  font-size: 20px;
+  padding: 4px 8px;
+}
+#contact-box form {
+  width: 80%;
+}
+flex-box {
+  right: 0 left 0;
+  top: auto margin;
+  margin: 20px;
+  padding: 30px;
+  bottom: 0;
+  font-size: 3rem;
+  font-family: "Courier New", Courier, monospace;
+}

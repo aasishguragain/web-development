@@ -1,0 +1,206 @@
+/* CSS reset */
+*{
+    margin: 0;
+    padding:0;
+}
+html{
+    scroll-behavior: smooth;
+}
+#navbar{
+    position: sticky;
+    display: flex;
+    height: 90px;
+    align-items: center;
+    top: 0px;
+}
+#logo{
+    margin: 10px 20px;
+
+}
+#logo img{
+    filter: invert();
+    height: 60px;
+    margin: 10px 10px;
+}
+#navbar ul{
+    display: flex;
+}
+#navbar::before{
+    content: " ";
+    background-color: black;
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    z-index: -2;
+    opacity: 0.7;
+}
+#navbar ul li{
+    list-style: none;
+    font-size: 1.3rem;
+    font-family: 'Source Serif Pro', serif;
+}
+#navbar ul li a{
+        border-radius: 12px;
+        color:black;
+        background-color: white;
+        font-weight: bold;
+        padding: 3px 20px;
+        margin: 6px;
+        display: block;
+        text-decoration: none;
+
+}
+#navbar ul li a:hover{
+    color: blue;
+    background-color: yellow;
+
+}
+#home{
+    display: flex;
+    flex-direction: column;
+    padding:3px 150px;
+    height:530px;
+    justify-content: center;
+    align-items: center;
+}
+#home::before{
+    content: " ";
+    background:url('http://www.nateskorner.com/application/views/themes/theme-1/assets/img/background/bg_9.jpg') no-repeat center center/cover;
+    position: absolute;
+    top: 0;
+    left: 0;
+    height:95%;
+    width: 100%;
+    z-index: -1;
+    /* opacity: 0.9; */
+}
+#home h1{
+    color: white;
+    align-items: center;
+    font-size: 3rem;
+    /* height: 100px; */
+    padding: 10px;
+}
+#home p{
+    color: white;
+    align-items: center;
+    font-size: 1.2rem;
+    margin-bottom: 20px;
+}
+.h-primary{
+    font-family: 'Source Serif Pro', serif;
+    font-size: 3rem;
+    padding: 25px;
+
+}
+.h-secondary{
+    font-family: 'Source Serif Pro', serif;
+    font-size: 2.2rem;
+}
+.btn{
+    padding: 5px 20px;
+    border: 2px solid cornsilk;
+    background-color: rgb(216, 24, 24);
+    color: white;
+    border-radius: 10px;
+    margin: 25px;
+    font-size: 1.4rem;
+    font-family: 'Baloo Bhai 2', cursive;
+    cursor: pointer;
+}
+.center{
+    text-align: center;
+    padding: 10px;
+}
+#services{
+    margin:20px;
+    display: flex;
+}
+#services .box{
+    border: 3px solid rgb(243, 34, 34);
+    padding: 40px;
+    margin:10px 10px;
+    margin-bottom: 15px;
+    border-radius: 20px;
+    background: rgb(229, 228, 243);
+
+}
+#services .box p{
+    /* font-family: 'Trochut', cursive; */
+    font-size: 1.1rem;
+}
+#services .box img{
+    height: 100px;
+    margin: auto;
+    display: block;
+
+}
+/* client section  */
+#client-section{
+    height: 450px;
+}
+#client-section::before{
+    content: " ";
+    position: absolute;
+    background:url("bg.jpg");
+    height: 60%;
+    width: 100%;
+    z-index: -1;
+    opacity: 0.4;
+}
+#clients{
+    font-family: 'Source Serif Pro', serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+#clients img{
+    height: 150px;
+    
+}
+.client-items{
+    padding: 30px;
+}
+/* contact-section */
+#contact{
+    position: relative;
+}
+#contact::before{
+    content: " ";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    opacity: 0.4;
+    background: url("../contect.jpg") no-repeat center center/cover;
+}
+#contact-box{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-bottom: 35px;
+}
+#contact-box form{
+    width: 40%;
+}
+#contact-box form label{
+    font-size: 1.3rem;
+    font-weight: bold;
+    font-family: 'Source Serif Pro', serif;
+}
+#contact-box input,
+#contact-box textarea{
+    border: 2px solid black;
+    width: 100%;
+    padding: 0.5rem;
+    border-radius: 10px;
+    font-size: 1rem;
+}
+footer{
+    background: black;
+    color: white;
+    padding: 10px 20px;
+}
